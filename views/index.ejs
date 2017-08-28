@@ -1,0 +1,26 @@
+<html>
+    <head>
+    <title>IBM Watson Virtual Agent Chat Widget Sample</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+    <div id="ibm_chat_root"></div>
+    <iframe style="width:100%; height:100%" frameBorder="0" src="<%= website %>"></iframe>
+
+    <script src='https://unpkg.com/@watson-virtual-agent/chat-widget/dist/chat.min.js'></script>
+    
+    <script>
+     // var IBMChat = require('@watson-virtual-agent/chat-widget');
+      var config = {
+        el: 'ibm_chat_root',
+        baseURL: 'https://api.ibm.com/virtualagent/run/api/v1',
+        botID: '<%= botid %>',
+        XIBMClientID: '3e5b0986-3fb2-4afb-a45f-d2cdf7a9b5a4',
+        XIBMClientSecret: 'L2qX5bM3sL8qD0jC5hX8iU7vM5iY4lP4kR3fA1yJ0lX6vP5oF1'
+      };
+      window.IBMChat.init(config);
+    </script>
+    </body>
+    </html>

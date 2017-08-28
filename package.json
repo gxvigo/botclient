@@ -1,0 +1,16 @@
+{
+  "name": "bot-client",
+  "version": "1.0.0",
+  "description": "node app that uses a given web page (url) to overlay a chatbot (Watson Conversation or Virtual Agent)",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.4"
+  }
+}
