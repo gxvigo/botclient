@@ -14,11 +14,11 @@
     <script>
      // var IBMChat = require('@watson-virtual-agent/chat-widget');
       var config = {
-        el: 'ibm_chat_root',
-        baseURL: 'https://api.ibm.com/virtualagent/run/api/v1',
+        el: '<%= el %>',
+        baseURL: '<%= baseurl %>',
         botID: '<%= botid %>',
-        XIBMClientID: '3e5b0986-3fb2-4afb-a45f-d2cdf7a9b5a4',
-        XIBMClientSecret: 'L2qX5bM3sL8qD0jC5hX8iU7vM5iY4lP4kR3fA1yJ0lX6vP5oF1'
+        XIBMClientID: '<%= xibmclientid %>',
+        XIBMClientSecret: '<%= xibmclientsecret %>'
       };
       window.IBMChat.init(config);
     </script>
